@@ -1,0 +1,9 @@
+.container-center {
+    margin: auto;
+    max-width: 600px;
+}
+
+.spacer {
+    height: 2em;
+}
+
