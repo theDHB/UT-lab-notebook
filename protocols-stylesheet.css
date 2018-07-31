@@ -1,3 +1,12 @@
+h {
+    align-content: center;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+}
+
 .container-center {
     margin: auto;
     max-width: 600px;
