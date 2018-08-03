@@ -7,6 +7,14 @@ h {
     margin: auto;
 }
 
+image {
+    width: 100%;
+}
+
+.page {
+    page-break-after: always;
+}
+
 .container {
     margin: auto;
     max-width: 750px;
@@ -33,4 +41,10 @@ h {
 
 th, td {
     padding: 15px;
+}
+
+@media only screen and (max-width 768px) {
+    div {
+        width:100%;
+    }
 }
