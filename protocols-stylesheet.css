@@ -30,6 +30,10 @@ image {
     height: 3em;
 }
 
+.double {
+    line-height: 2em;
+}
+
 .section {
     align-content: center
 }
