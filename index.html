@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="protocols-stylesheet.css">
     <style>
@@ -11,13 +14,10 @@
 <!--
     Left to do:
     Format nematode procedures
-    Anchor the table of contents to their respective topics
-    Figure out a better way to align the table of contents
     Fix "Identifying bacteria"
     Clip remaining graphics from PDF and insert in web page.
     Sexify the page with JavaScript:
         Click to expand images with FancyBox library
-        Expandable table of contents grouped by topic
         TOC dropdown navbar from anywhere in document
 -->
 
@@ -35,86 +35,114 @@
 -->
 
 
-<!-- Title page and header goes here. -->
 <div class="spacer"></div>
+
 <div class="container container-center">
     <div class="row">
 
-        <div class="container col col-12 spacer"></div>
+        <div class="col col-12">
+            <!--
+                Until the site is live, this link goes to the local root. 
+                <a href="/"> 
+            -->
+                <img src="https://extension.tennessee.edu/Western/PublishingImages/UT%20EXTENSION_4c.png" style="max-width: 100%;">
+            </a>
+        </div>
 
+        <div class="container spacer double"></div>
 
         <div class="col col-12">
             <h1>Laboratory Procedures Manual</h1>
+            <h4>
+                Department of Entomology and Plant Pathology <br>
+                West Tennessee Research and Education Center
+            </h4>
         </div>
 
-        <div class="container col col-12 spacer"></div>
-
-        <!-- Put the UT logo here. -->
-
-        <div class="col col-12">
-            <h2>University of Tennessee Extension</h2>
-            <h2>Entomology and Plant Pathology</h2>
-        </div>
-        <div class="col-12 spacer"></div>
+        <div class="container col col-12 spacer double"></div>
     </div>
 </div>
 
 <!-- Table of Contents -->
-<div class="container toc page">
-    <div class="row">
+<div class="container toc">
+    <div class="container row page">
+
         <div class="col col-12">
             <h3>Table of Contents</h3>
         </div>
-        <div class="col-12"><a href="#determining-pH">Determining pH</a></div>
-        <div class="col-12"><a href="#surface-sterilization">Surface sterilization of plant materials</a></div>
-        <div class="col-12"><a href="#media-sterilization">Media sterilization and aseptic techniques</a></div>
-        <div class="col-12"><a href="#agar-uses">Uses for agar and inoculants</a></div>
-        <div class="col-12"><a href="#recipes">Agar recipes</a></div>
-        <div class="col-12"><a href="#germination">Making germination media</a></div>
-        <div class="col-12"><em>Fusarium solani</em> (SDS)</div>
-        <div class="col-12">
-            <ul>
-                <li><a href="#fusarium-inoculation">Inoculation of grain sorghum</a></li>
-                <li><a href="#sorghum-seed"><em>F. solani</em> inoculation for SDS</a></li>
-                <li><a href="#siuc">SIUC method of SDS scoring</a></li>
-            </ul>
+
+        <div class="spacer"></div>
+
+        <div class="col-12 content-button">
+            <h4>General procedures</h4>
         </div>
-        <div class="col-12"><em>Cercospora sojina</em> (Frogeye Leaf Spot)</div>
-        <div class="col-12">
-            <ul>
-                <li><a href="#binbin"><em>C. sojina</em> storage and inoculation</a></li>
-                <li><a href="#isolates">Preservation of isolates</a></li>
-                <li><a href="#spore-suspension">Preparing the spore suspension</a></li>
-                <li><a href="#azoxystrobin">Characterization of azoxystrobin sensitivity</a></li>
-                <li><a href="#plates"><em>C. sojina</em> culture plates</a></li>
-            </ul>
+        <section class="col-12 content">
+            <div class="col-12"><a href="#determining-pH">Determining pH</a></div>
+            <div class="col-12"><a href="#surface-sterilization">Surface sterilization of plant materials</a></div>
+            <div class="col-12"><a href="#media-sterilization">Media sterilization and aseptic techniques</a></div>
+            <div class="col-12"><a href="#agar-uses">Uses for agar and inoculants</a></div>
+            <div class="col-12"><a href="#recipes">Agar recipes</a></div>
+            <div class="col-12"><a href="#germination">Making germination media</a></div>
+        </section>
+        
+        <div class="col-12 content-button">
+            <h4>Fungi procedures</h4>
         </div>
-        <div class="col-12"><a href="#field-sampling">Field sampling to characterize <em>Cryptococcus flavescens</em> populations</a></div>
-        <div class="col-12">
-            Stain protocols
-            <ul>
-                <li><a href="#simple-stain">Simple stain</a></li>
-                <li><a href="#negative-stain">Negative stain</a></li>
-                <li><a href="#gram-stain">Gram stain</a></li>
-                <li><a href="#capsule-stain">Capsule stain</a></li>
-                <li><a href="#acid-stain">Acid-fast stain</a></li>
-                <li><a href="#endospore-stain">Endospore stain</a></li>
-            </ul>
+        <section class="col-12 content">
+            <div class="col-12"><em>Fusarium solani</em> (SDS)</div>
+            <div class="col-12">
+                <ul>
+                    <li><a href="#fusarium-inoculation">Inoculation of grain sorghum</a></li>
+                    <li><a href="#sorghum-seed"><em>F. solani</em> inoculation for SDS</a></li>
+                    <li><a href="#siuc">SIUC method of SDS scoring</a></li>
+                </ul>
+            </div>
+            <div class="col-12"><em>Cercospora sojina</em> (Frogeye Leaf Spot)</div>
+            <div class="col-12">
+                <ul>
+                    <li><a href="#binbin"><em>C. sojina</em> storage and inoculation</a></li>
+                    <li><a href="#isolates">Preservation of isolates</a></li>
+                    <li><a href="#spore-suspension">Preparing the spore suspension</a></li>
+                    <li><a href="#azoxystrobin">Characterization of azoxystrobin sensitivity</a></li>
+                    <li><a href="#plates"><em>C. sojina</em> culture plates</a></li>
+                </ul>
+            </div>
+            <div class="col-12"><a href="#field-sampling">Field sampling to characterize <em>Cryptococcus flavescens</em> populations</a></div>
+        </section>
+
+        <div class="col-12 content-button">
+            <h4>Bacteria procedures</h4>
         </div>
-        <div class="col-12"><a href="#identifying-bacteria">Identifying bacteria</a></div>
-        <div class="col-12"><a href="#common-bacteria">Differentiation of commonly isolated bacterial genera</a></div>
-        <div class="col-12">
-            Nematode extractions
-            <ul>
-                <li><a href="#usda-nematode">USDA nematode extraction procedures</a></li>
-                <li><a href="#scn-samples">Processing SCN samples</a></li>
-                <li><a href="#reniform-samples">Processing reniform samples</a></li>
-                <li><a href="#grinding-cysts">Standard procedure for grinding cysts</a></li>
-                <li><a href="#elutriator">Using the elutriator</a></li>
-                <li><a href="#counting-nematodes">Counting reniform nematodes</a></li>
-                
-            </ul>
-        </div> 
+        <section class="col-12 content">
+            <div class="col-12">
+                Stain protocols
+                <ul>
+                    <li><a href="#simple-stain">Simple stain</a></li>
+                    <li><a href="#negative-stain">Negative stain</a></li>
+                    <li><a href="#gram-stain">Gram stain</a></li>
+                    <li><a href="#capsule-stain">Capsule stain</a></li>
+                    <li><a href="#acid-stain">Acid-fast stain</a></li>
+                    <li><a href="#endospore-stain">Endospore stain</a></li>
+                </ul>
+            </div>
+            <div class="col-12"><a href="#identifying-bacteria">Identifying bacteria</a></div>
+            <div class="col-12"><a href="#common-bacteria">Differentiation of commonly isolated bacterial genera</a></div>
+        </section>
+        <div class="col-12 content-button">
+            <h4>Nematode procedures</h4>
+        </div>
+        <section class="content">
+                <ul>
+                    <li><a href="#usda-nematode">USDA nematode extraction procedures</a></li>
+                    <li><a href="#scn-samples">Processing SCN samples</a></li>
+                    <li><a href="#reniform-samples">Processing reniform samples</a></li>
+                    <li><a href="#grinding-cysts">Standard procedure for grinding cysts</a></li>
+                    <li><a href="#elutriator">Using the elutriator</a></li>
+                    <li><a href="#counting-nematodes">Counting reniform nematodes</a></li>
+                    
+                </ul>
+            </div> 
+        </section>
     </div>
 </div>
 
@@ -124,11 +152,11 @@
 
 <div class="container container-center">
     <h3 >General procedures</h3>
+</div>
 
 <div class="spacer"></div>
 
-</div>
-<div class="container">
+<div class="container-fluid">
     <div class="container row page" id="general-procedures">
 
                 
@@ -1749,10 +1777,35 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
+    <!-- 
+        Doesn't work exactly right. Will come back to this. Probably.
+
+        <script type="text/javascript">
+
+        // Original JavaScript code by Chirp Internet: www.chirp.com.au
+        // Please acknowledge use of this code by including this header.
+        
+        window.addEventListener("DOMContentLoaded", function(e) {
+          var links = document.getElementsByTagName("A");
+          for(var i=0; i < links.length; i++) {
+            if(!links[i].hash) continue;
+            if(links[i].origin + links[i].pathname != self.location.href) continue;
+            (function(anchorPoint) {
+              links[i].addEventListener("click", function(e) {
+                anchorPoint.scrollIntoView(true);
+                anchorPoint.scrollIntoView({behavior: "smooth"});
+                e.preventDefault();
+              }, false);
+            })(document.getElementById(links[i].hash.replace(/#/, "")));
+          }
+        }, false);
+        
+        </script>
+    -->
     <script src="main.js"></script>
 </body>
 </html> 

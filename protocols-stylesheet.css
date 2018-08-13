@@ -2,53 +2,60 @@ div {
     margin-bottom: .5em;
 }
 
-h {
-    align-content: center;
-    margin: auto;
-}
-
-image {
-    width: 100%;
-}
-
 .page {
     page-break-after: always;
 }
 
 .container {
     margin: auto;
-    max-width: 750px;
+    width: 100%;
+    max-width: 8.5in;
 }
 
 .container-center {
     margin: auto;
     text-align: center;
-    max-width: 800px;
+    max-width: 8.5in;
 }
 
 .spacer {
-    height: 3em;
+    height: 3rem;
+}
+
+.content-button:hover {
+    color: steelblue;
+    cursor: pointer;
 }
 
 .double {
-    line-height: 2em;
-}
-
-.section {
-    align-content: center
+    height: 6rem;
 }
 
 .toc {
-    text-align: justify;
-    margin: auto auto auto 35%;
+    margin: auto;
+    justify-content: center;
+}
+
+.toc > .row {
+    width: 40%;
 }
 
 th, td {
     padding: 15px;
 }
 
-@media only screen and (max-width 768px) {
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    margin-right: 150px;
+}
+
+@media only screen and (max-width: 768px) {
     div {
         width:100%;
+    }
+
+    .toc > .row {
+        width: 100%;
     }
 }
