@@ -15,7 +15,6 @@ div {
 .container-center {
     margin: auto;
     text-align: center;
-    max-width: 8.5in;
 }
 
 .spacer {
@@ -31,6 +30,10 @@ div {
     height: 6rem;
 }
 
+img {
+    display: block;
+}
+
 .toc {
     margin: auto;
     justify-content: center;
@@ -44,10 +47,22 @@ th, td {
     padding: 15px;
 }
 
-#back-top {
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
     position: fixed;
-    bottom: 30px;
-    margin-right: 150px;
+    top: 5%;
+    right: 5%;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    color: #000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -57,5 +72,11 @@ th, td {
 
     .toc > .row {
         width: 100%;
+    }
+}
+
+@media only print {
+    html {
+        font-size: 16pt;
     }
 }
