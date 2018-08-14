@@ -4,6 +4,6 @@ function main() {
       $(this).next().slideToggle(400);
       $(this).toggleClass("active");
     });
-  }
-  
+  };
+
   $(document).ready(main)
