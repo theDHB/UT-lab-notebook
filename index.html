@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="protocols-stylesheet.css">
+    <link rel="stylesheet" href="styles/css/protocols-stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
     <style>
     </style>
 </head>
@@ -14,7 +17,6 @@
 <!--
     Left to do:
     Format nematode procedures
-    Fix "Identifying bacteria"
     Clip remaining graphics from PDF and insert in web page.
     Sexify the page with JavaScript:
         Click to expand images with FancyBox library
@@ -37,7 +39,7 @@
 
 <div class="spacer"></div>
 
-<div class="container container-center">
+<div class="container d-flex container-center page">
     <div class="row">
 
         <div class="col col-12">
@@ -1239,7 +1241,7 @@
             <li>Observe the slide under the microscope, using proper microscope technique.</li>
         </ol>
             
-        <h5>Negative Stain</h5>
+        <h5 id="negative-stain">Negative Stain</h5>
 
         <p>Negative staining is an excellent way to determine an organism's cellular morphology. Since the cells themselves are not stained, their morphology is not distorted in any way. The nigrosin provides a dark background against which the shapes of the unstained cells are clearly visible. This method provides a high degree of contrast not available in most other staining procedures.</p>
         
@@ -1372,7 +1374,10 @@
             Endospores will stain green. Parent cells will stain red.
         </p>
     </div>
-    <div class="col-12 container double page" id="identifying-bacteria">
+</div>
+
+<div class="container row">
+    <div class="col-12 container page" id="identifying-bacteria">
         <p>
             <h5>Identifying bacteria </h5> 
             
@@ -1418,9 +1423,9 @@
 
         </p>
     </div>
-
-    <div class="col-12 spacer"></div>
 </div>
+
+<div class="col-12 spacer"></div>
 
 <div class="container row page">
     <div class="col col-12 container" id="common-bacteria">
@@ -1434,7 +1439,7 @@
 </div>
 
 <div class="container row page">
-    <div class="col-12 container page">
+    <div class="col-12 container">
             <h5>How to do Gram Stains</h5>
 
             <h6>List of Reagents and Instruments </h6>
@@ -1718,25 +1723,29 @@
 <div class="container row page">
     <div class="container col-12" id="elutriator">
             <h4>Elutriator</h4>
-            For collecting cysts:
-            1 .  Plug in elutriator. Cord and outlet are on the corner closest to the door to the greenhouse.
-            2.	Locate the water line below the outlet and turn the valve to the "on" position.
-            3.	Make sure the timer in the box on the side of the elutriator is set to the desired running time.
-            4.	Turn on the power switch on the opposite corner of the elutriator and use the spray nozzle to clean the machine thoroughly.
-            5.	Press the "dump"button and wait for the bowls to fill with water.
-            6.	Clean all the sieves thoroughly.
-            7.	Place samples to be elutriated on tray behind the large funnels.
-            8.	Place size 60 sieves on top of the small funnels and insert tag from each corresponding sample
-            9.	Place size 20 sieves on top of the 60 sieves
-            10.	Press black button on opposite side of elutriator from power switch to start the machine 1I . Dump samples into corresponding large funnels
-            When samples are finished running:
-            1.	Remove size 20 sieves and rinse clean with spray nozzle
-            2.	Rinse contents of size 60 sieve into medium sized beaker
-            3.	Swirl contents of the beaker so that any cysts float to the surface
-            4.	Pour cysts off the top of the water into the flip top collection tube
-            5.	Repeat steps 3 and 4 twice more to collect a total of 100-150 ml of cyst solution
-            6.	Clean sieves thoroughly
-            Turn off and unplug the Elutriator. Turn valve on water line to "off'' position when finished.
+            <span>For collecting cysts:</span>
+            <ol>
+                <li>Plug in elutriator. Cord and outlet are on the corner closest to the door to the greenhouse.</li>
+                <li>Locate the water line below the outlet and turn the valve to the "on" position.</li>
+                <li>Make sure the timer in the box on the side of the elutriator is set to the desired running time.</li>
+                <li>Turn on the power switch on the opposite corner of the elutriator and use the spray nozzle to clean the machine thoroughly.</li>
+                <li>Press the "dump"button and wait for the bowls to fill with water.</li>
+                <li>Clean all the sieves thoroughly.</li>
+                <li>Place samples to be elutriated on tray behind the large funnels.</li>
+                <li>Place size 60 sieves on top of the small funnels and insert tag from each corresponding sample</li>
+                <li>Place size 20 sieves on top of the 60 sieves</li>
+                <li>Press black button on opposite side of elutriator from power switch to start the machine 1I . Dump samples into corresponding large funnels</li>
+            </ol>
+            <span>When samples are finished running:</span>
+            <ol>
+                <li>Remove size 20 sieves and rinse clean with spray nozzle</li>
+                <li>Rinse contents of size 60 sieve into medium sized beaker</li>
+                <li>Swirl contents of the beaker so that any cysts float to the surface</li>
+                <li>Pour cysts off the top of the water into the flip top collection tube</li>
+                <li>Repeat steps 3 and 4 twice more to collect a total of 100-150 ml of cyst solution</li>
+                <li>Clean sieves thoroughly</li>
+            </ol>
+            <span>Turn off and unplug the Elutriator. Turn valve on water line to "off'' position when finished.</span>
             
     </div>
 </div>
@@ -1777,35 +1786,48 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
 
+<a id="back2Top" title="Back to top" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
-    <!-- 
-        Doesn't work exactly right. Will come back to this. Probably.
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
+<script src="scripts/js/main.js"></script>
+<script>
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 1000) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+    
+});
+</script>
+<script type="text/javascript">
+// Original JavaScript code by Chirp Internet: www.chirp.com.au
+// Please acknowledge use of this code by including this header.
 
-        <script type="text/javascript">
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
 
-        // Original JavaScript code by Chirp Internet: www.chirp.com.au
-        // Please acknowledge use of this code by including this header.
-        
-        window.addEventListener("DOMContentLoaded", function(e) {
-          var links = document.getElementsByTagName("A");
-          for(var i=0; i < links.length; i++) {
-            if(!links[i].hash) continue;
-            if(links[i].origin + links[i].pathname != self.location.href) continue;
-            (function(anchorPoint) {
-              links[i].addEventListener("click", function(e) {
-                anchorPoint.scrollIntoView(true);
-                anchorPoint.scrollIntoView({behavior: "smooth"});
-                e.preventDefault();
-              }, false);
-            })(document.getElementById(links[i].hash.replace(/#/, "")));
-          }
-        }, false);
-        
-        </script>
-    -->
-    <script src="main.js"></script>
+</script>
 </body>
 </html> 
