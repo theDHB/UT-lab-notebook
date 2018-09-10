@@ -21,14 +21,9 @@ div {
     height: 3rem;
 }
 
-.content-button {
-    color: steelblue;
-}
-
 .content-button:hover {
-    color: blue;
+    color: steelblue;
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 .double {
@@ -50,21 +45,6 @@ img {
 
 th, td {
     padding: 15px;
-}
-
-hr { 
-    display: block;
-    width: 40%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-} 
-
-section {
-    margin-bottom: 1.5em;
 }
 
 #back2Top {
@@ -99,9 +79,4 @@ section {
     html {
         font-size: 16pt;
     }
-
-    hr {
-        display: none;
-    }
-
 }
